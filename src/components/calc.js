@@ -26,7 +26,6 @@ class Calc extends React.Component {
   <button type="button" className="button double-button">0</button>
   <button type="button" className="button">.</button>
   <button type="button" className="button orange">=</button>
-  {/* <button type="button" className="button"></button> */}
 </div>
 </div>
     );
