@@ -2,11 +2,24 @@ import React from 'react';
 import './calc.css';
 
 class Calc extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currValue: '0',
+    };
+  }
+
+  handleClick = () => {
+
+  }
+
   render() {
+    const { currValue } = this.state;
     return (
+
 <div className="calculator">
-<div className="answer">0</div>
-<div className="buttons"> {this.Calc}
+<div className="answer">{currValue}</div>
+<div className="buttons">
   <button type="button" className="button">AC</button>
   <button type="button" className="button">+/-</button>
   <button type="button" className="button">%</button>
