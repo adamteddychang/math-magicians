@@ -1,7 +1,7 @@
 .calculator {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 28rem;
   margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
   background-color: #858694;
   color: white;
   padding: 1rem;
-  margin-right: 2px;
+  
 }
 
 .buttons {
@@ -21,7 +21,7 @@
 }
 
 .button {
-  width: 7.03rem;
+  width: 7rem;
   height: 76px;
   font-size: 24px;
   background-color: #e0e0e0;
@@ -29,7 +29,7 @@
 }
 
 .double-button {
-  width: 14.06rem;
+  width: 14rem;
 }
 
 .orange {
