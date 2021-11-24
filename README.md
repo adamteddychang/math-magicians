@@ -58,7 +58,6 @@ $ cd math-magicians/
 ### Usage
 
 - Web developement practioner
-- For anyone who wants to create a meals application.
 
 
 
