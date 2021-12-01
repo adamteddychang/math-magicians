@@ -1,0 +1,9 @@
+.home {
+  width: 50%;
+  margin: 5rem auto;
+}
+
+.home p {
+  font-family: sans-serif;
+  font-size: 24px;
+}
