@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+  width: 50%;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+nav h1 {
+  margin-left: 2rem;
+}
+
+.navContain {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 2rem;
+  font-size: 24px;
+}
