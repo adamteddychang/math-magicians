@@ -1,9 +1,8 @@
-import { render,screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import App from "./App.js";
+import App from './App.js';
 import '@testing-library/jest-dom';
-
 
 describe('nav links correct path', () => {
   beforeEach(() => {
@@ -16,6 +15,6 @@ describe('nav links correct path', () => {
     userEvent.click(homeLink);
     const homeText = screen.getByText('Welcome to this webApp!');
 
-    expect(homeText).toBeVisible(); 
+    expect(homeText).toBeVisible();
   });
 });

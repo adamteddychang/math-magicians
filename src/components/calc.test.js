@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import Calc from './calc.js';
-import { cleanup, fireEvent, render} from "@testing-library/react";
 
 it('Renders calculator', () => {
   const calc = renderer.create(
@@ -10,14 +10,14 @@ it('Renders calculator', () => {
   expect(calc).toMatchSnapshot();
 });
 
-it("captures clicks", done => {
+it('captures clicks', (done) => {
   function handleClick() {
     done();
   }
   const { getByText } = render(
-    <button onClick={handleClick}>Click Me</button>
+    <button onClick={handleClick}>Click Me</button>,
   );
-  const node = getByText("Click Me");
+  const node = getByText('Click Me');
   fireEvent.click(node);
 });
 
