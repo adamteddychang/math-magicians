@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders Quote 1`] = `
+exports[`Renders calculator 1`] = `
 <div
   className="calculator"
 >
