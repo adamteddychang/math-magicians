@@ -16,4 +16,12 @@ describe('nav links correct path', () => {
 
     expect(homeText).toBeVisible();
   });
+  test('clicking on Quote brings you to Quote page', () => {
+    const quoteLink = screen.getByText('Quote');
+
+    userEvent.click(quoteLink);
+    const quoteName = screen.getByText('The Quote');
+
+    expect(quoteName).toBeVisible();
+  });
 });

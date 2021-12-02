@@ -24,6 +24,7 @@ exports[`renders nav 1`] = `
     >
       <li
         className="nav-item"
+        data-testid="calculator"
       >
         Calculator
       </li>
