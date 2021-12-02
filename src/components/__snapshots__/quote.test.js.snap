@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Quote 1`] = `
+<div
+  className="quote"
+>
+  <h1>
+    The Quote
+  </h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    <br />
+     -Lorem Ipsum
+  </p>
+</div>
+`;

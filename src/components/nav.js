@@ -11,7 +11,7 @@ export default function Nav() {
         <li className="nav-item">Home</li>
         </Link>
         <Link to='/calc'>
-        <li className="nav-item">Calculator</li>
+        <li className="nav-item" data-testid="calculator">Calculator</li>
         </Link>
         <Link to='/quote'>
         <li className="nav-item">Quote</li>
