@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
+import { createMemoryHistory } from 'history';
 import Nav from './nav.js';
 
 it('renders nav', () => {
@@ -15,14 +16,14 @@ it('renders nav', () => {
   expect(nav).toMatchSnapshot();
 });
 
-test('clicking on Calculator brings you to Calculator page', () => {
+test('Navbar calculator button function', () => {
   render(<Router>
       <Nav />
       </Router>);
-  const calcLink = screen.getByTestId('calculator');
+  const calcLink = screen.getByText('Calculator');
+  const history = createMemoryHistory();
 
   userEvent.click(calcLink);
-  const divideSymb = screen.getByText('Calculator');
 
-  expect(divideSymb).toBeVisible();
+  expect(history.location.pathname).toBe('/');
 });
