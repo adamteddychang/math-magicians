@@ -7,7 +7,7 @@ it('renders home', () => {
   const nav = renderer.create(
     <Router>
     <Nav />
-    </Router>
+    </Router>,
   ).toJSON();
   expect(nav).toMatchSnapshot();
 });
